@@ -23,7 +23,6 @@ const Main = () => {
   }, [dispatch]);
 
 
-
   console.log(todos);
   return (
     <Layout>

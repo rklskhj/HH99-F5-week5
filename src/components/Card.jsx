@@ -97,7 +97,7 @@ const StCard = styled.div`
 const StText = styled.div`
   font-size: 25px;
   margin-bottom: 10px;
-  width: 200px;
+  width: 350px;
   //set
   text-overflow: ellipsis;
   white-space: nowrap;
