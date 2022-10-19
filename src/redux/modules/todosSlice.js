@@ -101,6 +101,7 @@ const todosSlice = createSlice({
     },
     //삭제합니다
     [__deleteTodos.fulfilled]: (state, action) => {
+      console.log("del", action.payload);
       const bye = state.todos.findIndex((todo) => todo.id === action.payload);
       //id값일치 된거 하나 삭제.
       state.todos.splice(bye, 1);

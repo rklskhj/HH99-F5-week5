@@ -14,8 +14,14 @@ const Main = () => {
   const { todos } = useSelector((state) => state.todos);
 
   useEffect(() => {
+    // window.location.reload()
+  }, [])
+
+  useEffect(() => {
     dispatch(__getTodos());
+    console.log('hello')
   }, [dispatch]);
+
 
 
   console.log(todos);
@@ -27,7 +33,8 @@ const Main = () => {
           <Stack>
             <img className="phoneImage" alt="르탄이1" src="img/르탄이1.png" />
             <h1>현재는 아무것도 없네요!</h1>
-          </Stack> : <>{todos?.map((todo) => (
+          </Stack>
+          : <>{todos?.map((todo) => (
             <Card key={todo.id} todo={todo} />
           ))}</>}
       </Stodos>

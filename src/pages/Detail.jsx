@@ -70,7 +70,10 @@ const Detail = () => {
                     '댓글이 삭제 되었어요!',
                     'success'
                 )
-                navigate("/")
+                setTimeout(() => {
+                    navigate("/")
+                }, 200);
+
             }
         })
 
