@@ -34,6 +34,7 @@ export const size1 = css`
     &:hover{
         background-color: #f7be67;
     }
+    cursor: pointer;
 `;
 export const size2 = css`
     background-color: #FDC676;
@@ -47,6 +48,7 @@ export const size2 = css`
     &:hover{
     background-color: #f7be67;
     }
+    cursor: pointer;
 `;
 export const size3 = css`
   background-color: #FDC676;
@@ -60,4 +62,5 @@ export const size3 = css`
     &:hover{
     background-color: #f7be67;
     }
+    cursor: pointer;
 `;

@@ -66,5 +66,6 @@ const CommentInputBox = styled.form`
         &:hover{
         background-color: #f7be67;
     }
+    cursor: pointer;
     }
 `

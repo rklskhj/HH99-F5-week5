@@ -84,6 +84,7 @@ const AddForm = styled.form`
     border-bottom-right-radius: 10px;
     /* border: 2px solid gray; */
     input{
+        
         width: 100%;
         height: 5vh;
         padding: 10px;
@@ -91,6 +92,8 @@ const AddForm = styled.form`
         border: none;
         border-bottom: 2px solid #FDC676;
         font-size: 20px;
+        
+        
     }
     textarea{
         width: 100%;

@@ -58,7 +58,7 @@ const Comment = ({ comment }) => {
     return (
         <CommentBox>
             <FcIphone style={{ fontSize: "35px" }} className='btnIcon' />
-            {!isEdit ? <TextBox><p>{comment.content}</p><p>{displayedAt(comment.id)}</p></TextBox> :
+            {!isEdit ? <TextBox><p>{comment.content}</p><p id="time">{displayedAt(comment.id)}</p></TextBox> :
                 <FormBox>
                     <input type="text" value={editComment.content} onChange={(e) => { setEditComment({ ...editComment, content: e.target.value }) }} />
                     <Button id="inpBox" size="size3" onClick={onCommentEdit}><FcCheckmark className='btnIcon' /></Button>
@@ -121,6 +121,12 @@ const TextBox = styled.div`
    
     border: none;
     border-bottom: 1px solid #FDC676;
+
+    #time{
+        font-size:11px;
+        color: gray;
+        padding-top: 2.5px;
+    }
 
 `
 const FormBox = styled.form`
