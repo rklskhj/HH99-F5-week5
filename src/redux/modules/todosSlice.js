@@ -17,7 +17,7 @@ export const __addTodos = createAsyncThunk(
     try {
       console.log("base", BASE_URL);
       const data = await axios.post(BASE_URL, todoData);
-      // console.log(todoData);
+      console.log("123", data);
       return thunkAPI.fulfillWithValue(data.data);
     } catch (error) {
       return thunkAPI.rejectWithValue(error);
@@ -30,9 +30,9 @@ export const __getTodos = createAsyncThunk(
   "todos/getTodos",
   async (payload, thunkAPI) => {
     try {
-      const data = await axios.get(BASE_URL);
-
-      return thunkAPI.fulfillWithValue(data.data);
+      const { data } = await axios.get(BASE_URL);
+      const newData = data.sort((a, b) => b.id - a.id);
+      return thunkAPI.fulfillWithValue(newData);
     } catch (error) {
       return thunkAPI.rejectWithValue(error);
     }
