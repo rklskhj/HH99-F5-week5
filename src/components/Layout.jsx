@@ -20,7 +20,7 @@ const LayoutCss = styled.div`
     width:100%;
     height:100%;
     margin: auto;
-    
+    overflow: auto;
 }
 
   @media (max-width: 1920px) and (min-width: 1024px) {
@@ -33,14 +33,12 @@ const LayoutCss = styled.div`
 }
 
   @media (max-width: 2560px) and (min-width: 1921px) {
-      margin: 270px auto;
+      margin: 220px auto;
       width:20%;
       max-height: 100%;
       height: 650px;
       background-color: #ffe9ad;
-      transform: scale(1.5);
+      transform: scale(1.3);
   }
 
-
- 
 `;

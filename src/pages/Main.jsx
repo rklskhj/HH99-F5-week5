@@ -47,14 +47,13 @@ const Stodos = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   background-color: white;
-
   min-width: 300px;
-  min-height: 695px;
+  /* min-height: 695px; */
   width: 100%;
-  height: 100%;
+  height: 800px;
   margin: auto;
+  padding-top: 15px;
   padding-top: 15px;
 
   box-shadow: 3px 5px 5px 1px gray;
@@ -77,8 +76,12 @@ const Stodos = styled.div`
     box-shadow: inset 0px 0px 5px white;
   }
   @media (max-width: 480px) {
+    height: 692px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    /* overflow: auto; */
+  
+
 }
 
 `;
