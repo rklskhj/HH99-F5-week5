@@ -122,6 +122,10 @@ const TextBox = styled.div`
     border: none;
     border-bottom: 1px solid #FDC676;
 
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
+    overflow: hidden;
+
     #time{
         font-size:11px;
         color: gray;

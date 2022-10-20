@@ -34,7 +34,7 @@ const AddCommentForm = () => {
 
     return (
         <CommentInputBox>
-            <input type="text" value={comment.content} placeholder='댓글을 작성해주세요!' onChange={(e) => setComment({ ...comment, content: e.target.value })}></input>
+            <input maxLength="18" type="text" value={comment.content} placeholder='댓글을 작성해주세요!' onChange={(e) => setComment({ ...comment, content: e.target.value })}></input>
             <button onClick={onSubmitComment}>추가하기</button>
         </CommentInputBox>
     )
