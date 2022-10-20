@@ -21,7 +21,7 @@ const Card = ({ todo }) => {
   return (
     <StCard
       onClick={() => {
-        navigate(`/Detail/${todo.id}`);
+        navigate(`/detail/${todo.id}`);
       }}
     >
       <div style={{ width: "100%" }}>
