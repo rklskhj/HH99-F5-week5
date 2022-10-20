@@ -3,16 +3,17 @@ import React from "react";
 import styled from "styled-components";
 
 const Layout = (props) => {
-    return (
-        // <Container style={{ width: "" }} fixed>
-        <LayoutCss>{props.children}</LayoutCss>
-        // </Container>
-    );
+  return (
+    // <Container style={{ width: "" }} fixed>
+    <LayoutCss>{props.children}</LayoutCss>
+    // </Container>
+  );
 };
 
 export default Layout;
 
 const LayoutCss = styled.div`
+  
   
   
   @media (max-width: 480px) {
@@ -30,6 +31,15 @@ const LayoutCss = styled.div`
     background-color: #ffe9ad;
     
 }
+
+  @media (max-width: 2560px) and (min-width: 1921px) {
+      margin: 270px auto;
+      width:20%;
+      max-height: 100%;
+      height: 650px;
+      background-color: #ffe9ad;
+      transform: scale(1.5);
+  }
 
 
  
