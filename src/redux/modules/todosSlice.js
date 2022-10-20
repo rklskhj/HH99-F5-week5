@@ -78,7 +78,7 @@ const todosSlice = createSlice({
       console.log("act", action);
       state.isLoading = false;
 
-      state.todos.push(action.payload);
+      state.todos.unshift(action.payload);
     },
     [__addTodos.rejected]: (state, action) => {
       state.isLoading = false;
